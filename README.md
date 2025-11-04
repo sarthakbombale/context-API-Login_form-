@@ -1,16 +1,19 @@
-# React + Vite
+🌐 Live Demo
+Check out the live version here:
+👉 Context API Login Form on Netlify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+🧠 Context API Login Form
+This is a simple React-based login form that uses Context API to manage global user state across components. It demonstrates how to avoid prop drilling and share authentication data efficiently in a modern frontend app.
+🔐 What It Does
+- Provides a login form with controlled inputs
+- Stores user data globally using React Context
+- Displays user profile conditionally after login
+- Uses Bootstrap for clean, responsive UI
+- Built with Vite for fast development and optimized builds
+🧠 How Context Is Used
+- UserContext.js creates the context
+- UserContextProvider.jsx wraps the app and provides user and setUser
+- Login.jsx updates the context on login
+- Profile.jsx reads from context to show user info
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
