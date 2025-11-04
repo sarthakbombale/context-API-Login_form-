@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Form, Button, Card } from "react-bootstrap";
-import { UserContext } from "../context/UserContext";
+import UserContext from "../context/UserContext"; 
 
 function Login() {
   const [username, setUsername] = useState("");
