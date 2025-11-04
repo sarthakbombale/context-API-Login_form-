@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { motion } from "framer-motion";
-import {UserContext} from "./UserContext";
+import { UserContext } from "../context/UserContext";;
 
 const Profile = () => {
   const { user } = useContext(UserContext);
